@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .ma-bold-wider {
+        @apply font-bold tracking-wider;
+    }
+    .ma-section-title {
+        @apply font-bold text-3xl tracking-wider;
+    }
+    .ma-chip {
+        @apply text-xs md:text-base px-4 py-2 bg-white text-oga inline-block rounded-full;
+    }
+    .ma-chip-sq {
+        @apply w-24 lg:w-36 text-center py-2 bg-white text-oga inline-block font-bold text-sm lg:text-base lg:px-4;
+    }
+    .ma-background-recm-lg {
+        width: calc(100% - 80px);
+        height: 1260px;
+        display: block;
+        content: "";
+        overflow: hidden;
+        background: #ee7500;
+        mix-blend-mode: multiply;
+        border-radius: 120px 0 120px 40px;
+        left: 80px;
+        top: 0;
+        z-index: 2;
+    }
+    .ma-background-recm {
+        width: calc(100% - 30px);
+        height: 1580px;
+        display: block;
+        content: "";
+        overflow: hidden;
+        background: #ee7500;
+        mix-blend-mode: multiply;
+        border-radius: 60px 0 60px 20px;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        z-index: 2;
+    }
+    .ma-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: solid 1px white;
+        text-align: center;
+        line-height: 80px;
+    }
+    .ma-circle-lg {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid 1px white;
+        text-align: center;
+        line-height: 100px;
+    }
+    .ma-roundbox {
+        border-radius: 24px 88px 24px 88px;
+    }
+    .ma-bus-name {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
